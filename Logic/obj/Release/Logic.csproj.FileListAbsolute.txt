@@ -1,0 +1,6 @@
+D:\projectsVS\TTfalcongaze\Logic\bin\Release\Logic.dll
+D:\projectsVS\TTfalcongaze\Logic\bin\Release\Logic.pdb
+D:\projectsVS\TTfalcongaze\Logic\obj\Release\Logic.StringsResources.resources
+D:\projectsVS\TTfalcongaze\Logic\obj\Release\Logic.csproj.GenerateResource.Cache
+D:\projectsVS\TTfalcongaze\Logic\obj\Release\Logic.dll
+D:\projectsVS\TTfalcongaze\Logic\obj\Release\Logic.pdb

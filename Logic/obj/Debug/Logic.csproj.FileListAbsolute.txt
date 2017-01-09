@@ -1,0 +1,7 @@
+D:\projectsVS\TTfalcongaze\Logic\bin\Debug\Logic.dll
+D:\projectsVS\TTfalcongaze\Logic\bin\Debug\Logic.pdb
+D:\projectsVS\TTfalcongaze\Logic\obj\Debug\Logic.StringsResources.resources
+D:\projectsVS\TTfalcongaze\Logic\obj\Debug\Logic.csproj.GenerateResource.Cache
+D:\projectsVS\TTfalcongaze\Logic\obj\Debug\Logic.dll
+D:\projectsVS\TTfalcongaze\Logic\obj\Debug\Logic.pdb
+D:\projectsVS\TTfalcongaze\Logic\obj\Debug\Logic.csprojResolveAssemblyReference.cache
