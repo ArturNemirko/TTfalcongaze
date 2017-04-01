@@ -5,3 +5,10 @@ D:\projectsVS\TTfalcongaze\Logic\obj\Debug\Logic.csproj.GenerateResource.Cache
 D:\projectsVS\TTfalcongaze\Logic\obj\Debug\Logic.dll
 D:\projectsVS\TTfalcongaze\Logic\obj\Debug\Logic.pdb
 D:\projectsVS\TTfalcongaze\Logic\obj\Debug\Logic.csprojResolveAssemblyReference.cache
+E:\TTfalcongaze\Logic\bin\Debug\Logic.dll
+E:\TTfalcongaze\Logic\bin\Debug\Logic.pdb
+E:\TTfalcongaze\Logic\obj\Debug\Logic.csprojResolveAssemblyReference.cache
+E:\TTfalcongaze\Logic\obj\Debug\Logic.StringsResources.resources
+E:\TTfalcongaze\Logic\obj\Debug\Logic.csproj.GenerateResource.Cache
+E:\TTfalcongaze\Logic\obj\Debug\Logic.dll
+E:\TTfalcongaze\Logic\obj\Debug\Logic.pdb
