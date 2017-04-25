@@ -166,13 +166,13 @@
     <value>Ошибка</value>
   </data>
   <data name="ErrorNoDataFName" xml:space="preserve">
-    <value>Не заполненно поле "Имя"!</value>
+    <value>Не верно указано поле "Имя"!</value>
   </data>
   <data name="ErrorNoDataGender" xml:space="preserve">
-    <value>Не заполненно поле "Пол"!</value>
+    <value>Не верно указано поле "Пол"!</value>
   </data>
   <data name="ErrorNoDataLName" xml:space="preserve">
-    <value>Не заполненно поле "Фамилия"!</value>
+    <value>Не верно указано поле "Фамилия"!</value>
   </data>
   <data name="Removal" xml:space="preserve">
     <value>Удаление</value>
@@ -182,5 +182,17 @@
   </data>
   <data name="RemovalStudent" xml:space="preserve">
     <value>Вы действительно хотите удалить студента?</value>
+  </data>
+  <data name="ErrorNoDataAge" xml:space="preserve">
+    <value>Не верно указано поле "Возраст"!</value>
+  </data>
+  <data name="ChangesSaved" xml:space="preserve">
+    <value>Изменения сохранены!</value>
+  </data>
+  <data name="PatternSearchNumber" xml:space="preserve">
+    <value>[-+]?\d+</value>
+  </data>
+  <data name="ExceptionReadXML" xml:space="preserve">
+    <value>Exception in ReadXML Method</value>
   </data>
 </root>

@@ -1,20 +1,20 @@
-﻿TTfalcongaze
+﻿TTFalcongaze
 
 
 winexe
 C#
 .cs
-E:\TTfalcongaze\TTfalcongaze\obj\Debug\
-TTfalcongaze
+C:\Users\nemir\Desktop\TTFalcongaze\TTFalcongaze\obj\Debug\
+TTFalcongaze
 none
 false
 DEBUG;TRACE
-E:\TTfalcongaze\TTfalcongaze\App.xaml
-4-1210330798
+C:\Users\nemir\Desktop\TTFalcongaze\TTFalcongaze\App.xaml
+4438782321
 
-7-1661199881
-14-439979679
-Theme\MoonUICore.xaml;Windows\AddStudentWindow.xaml;MainWindow.xaml;Windows\EditStudentWindow.xaml;
+13288182077
+16944788084
+Themes\MoonUICore.xaml;Themes\StyleLB.xaml;View\MainWindow.xaml;View\StudentUserControl.xaml;
 
 False
 

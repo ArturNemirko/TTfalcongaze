@@ -61,6 +61,15 @@ namespace Logic {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Изменения сохранены!.
+        /// </summary>
+        public static string ChangesSaved {
+            get {
+                return ResourceManager.GetString("ChangesSaved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Students.xml.
         /// </summary>
         public static string ConnectionStudentsFile {
@@ -106,7 +115,16 @@ namespace Logic {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Не заполненно поле &quot;Имя&quot;!.
+        ///   Looks up a localized string similar to Не верно указано поле &quot;Возраст&quot;!.
+        /// </summary>
+        public static string ErrorNoDataAge {
+            get {
+                return ResourceManager.GetString("ErrorNoDataAge", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Не верно указано поле &quot;Имя&quot;!.
         /// </summary>
         public static string ErrorNoDataFName {
             get {
@@ -115,7 +133,7 @@ namespace Logic {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Не заполненно поле &quot;Пол&quot;!.
+        ///   Looks up a localized string similar to Не верно указано поле &quot;Пол&quot;!.
         /// </summary>
         public static string ErrorNoDataGender {
             get {
@@ -124,11 +142,20 @@ namespace Logic {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Не заполненно поле &quot;Фамилия&quot;!.
+        ///   Looks up a localized string similar to Не верно указано поле &quot;Фамилия&quot;!.
         /// </summary>
         public static string ErrorNoDataLName {
             get {
                 return ResourceManager.GetString("ErrorNoDataLName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Exception in ReadXML Method.
+        /// </summary>
+        public static string ExceptionReadXML {
+            get {
+                return ResourceManager.GetString("ExceptionReadXML", resourceCulture);
             }
         }
         
@@ -147,6 +174,15 @@ namespace Logic {
         public static string Male {
             get {
                 return ResourceManager.GetString("Male", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [-+]?\d+.
+        /// </summary>
+        public static string PatternSearchNumber {
+            get {
+                return ResourceManager.GetString("PatternSearchNumber", resourceCulture);
             }
         }
         

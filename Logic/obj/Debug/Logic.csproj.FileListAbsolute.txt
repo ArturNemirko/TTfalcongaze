@@ -5,10 +5,36 @@ D:\projectsVS\TTfalcongaze\Logic\obj\Debug\Logic.csproj.GenerateResource.Cache
 D:\projectsVS\TTfalcongaze\Logic\obj\Debug\Logic.dll
 D:\projectsVS\TTfalcongaze\Logic\obj\Debug\Logic.pdb
 D:\projectsVS\TTfalcongaze\Logic\obj\Debug\Logic.csprojResolveAssemblyReference.cache
-E:\TTfalcongaze\Logic\bin\Debug\Logic.dll
-E:\TTfalcongaze\Logic\bin\Debug\Logic.pdb
-E:\TTfalcongaze\Logic\obj\Debug\Logic.csprojResolveAssemblyReference.cache
-E:\TTfalcongaze\Logic\obj\Debug\Logic.StringsResources.resources
-E:\TTfalcongaze\Logic\obj\Debug\Logic.csproj.GenerateResource.Cache
-E:\TTfalcongaze\Logic\obj\Debug\Logic.dll
-E:\TTfalcongaze\Logic\obj\Debug\Logic.pdb
+E:\projectsVS\falcongaze\TTFalcongaze\Logic\bin\Debug\Logic.dll
+E:\projectsVS\falcongaze\TTFalcongaze\Logic\bin\Debug\Logic.pdb
+E:\projectsVS\falcongaze\TTFalcongaze\Logic\obj\Debug\Logic.StringsResources.resources
+E:\projectsVS\falcongaze\TTFalcongaze\Logic\obj\Debug\Logic.csproj.GenerateResource.Cache
+E:\projectsVS\falcongaze\TTFalcongaze\Logic\obj\Debug\Logic.dll
+E:\projectsVS\falcongaze\TTFalcongaze\Logic\obj\Debug\Logic.pdb
+E:\projectsVS\falcongaze\TTFalcongaze\Logic\bin\Debug\Ninject.dll
+E:\projectsVS\falcongaze\TTFalcongaze\Logic\bin\Debug\Ninject.xml
+E:\projectsVS\falcongaze\TTFalcongaze\Logic\obj\Debug\Logic.csprojResolveAssemblyReference.cache
+E:\projectsVS\falcongaze\TTFalcongaze\Logic\bin\Debug\log4net.dll
+E:\projectsVS\falcongaze\TTFalcongaze\Logic\bin\Debug\log4net.xml
+E:\projectsVS\falcongaze\Новая папка\TTFalcongaze\Logic\bin\Debug\Logic.dll
+E:\projectsVS\falcongaze\Новая папка\TTFalcongaze\Logic\bin\Debug\Logic.pdb
+E:\projectsVS\falcongaze\Новая папка\TTFalcongaze\Logic\bin\Debug\log4net.dll
+E:\projectsVS\falcongaze\Новая папка\TTFalcongaze\Logic\bin\Debug\Ninject.dll
+E:\projectsVS\falcongaze\Новая папка\TTFalcongaze\Logic\bin\Debug\log4net.xml
+E:\projectsVS\falcongaze\Новая папка\TTFalcongaze\Logic\bin\Debug\Ninject.xml
+E:\projectsVS\falcongaze\Новая папка\TTFalcongaze\Logic\obj\Debug\Logic.csprojResolveAssemblyReference.cache
+E:\projectsVS\falcongaze\Новая папка\TTFalcongaze\Logic\obj\Debug\Logic.StringsResources.resources
+E:\projectsVS\falcongaze\Новая папка\TTFalcongaze\Logic\obj\Debug\Logic.csproj.GenerateResource.Cache
+E:\projectsVS\falcongaze\Новая папка\TTFalcongaze\Logic\obj\Debug\Logic.dll
+E:\projectsVS\falcongaze\Новая папка\TTFalcongaze\Logic\obj\Debug\Logic.pdb
+C:\Users\nemir\Desktop\TTFalcongaze\Logic\bin\Debug\Logic.dll
+C:\Users\nemir\Desktop\TTFalcongaze\Logic\bin\Debug\Logic.pdb
+C:\Users\nemir\Desktop\TTFalcongaze\Logic\bin\Debug\log4net.dll
+C:\Users\nemir\Desktop\TTFalcongaze\Logic\bin\Debug\Ninject.dll
+C:\Users\nemir\Desktop\TTFalcongaze\Logic\bin\Debug\log4net.xml
+C:\Users\nemir\Desktop\TTFalcongaze\Logic\bin\Debug\Ninject.xml
+C:\Users\nemir\Desktop\TTFalcongaze\Logic\obj\Debug\Logic.csprojResolveAssemblyReference.cache
+C:\Users\nemir\Desktop\TTFalcongaze\Logic\obj\Debug\Logic.StringsResources.resources
+C:\Users\nemir\Desktop\TTFalcongaze\Logic\obj\Debug\Logic.csproj.GenerateResource.Cache
+C:\Users\nemir\Desktop\TTFalcongaze\Logic\obj\Debug\Logic.dll
+C:\Users\nemir\Desktop\TTFalcongaze\Logic\obj\Debug\Logic.pdb

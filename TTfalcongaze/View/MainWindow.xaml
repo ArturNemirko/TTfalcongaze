@@ -1,0 +1,122 @@
+﻿<Window x:Class="TTFalcongaze.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TTFalcongaze"
+        xmlns:custom="clr-namespace:TTFalcongaze.ViewModel"
+        d:DataContext="{d:DesignInstance Type={x:Type custom:MainViewModel}}"
+        mc:Ignorable="d"            
+        Title="Students Journal" Height="550" Width="825" WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+        <DataTemplate x:Key="MainDT">
+            <Grid Margin="5" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" ></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Horizontal" Grid.Row="0">
+                    <TextBlock Margin="2" Text="{Binding Path=LastName}"></TextBlock>
+                    <TextBlock Margin="2" Text="{Binding Path=FirstName}"></TextBlock>
+                </StackPanel>
+                <TextBlock Grid.Row="1" Margin="2" Text="{Binding Path=Age, StringFormat=\{0\} лет}"/>
+            </Grid>
+        </DataTemplate>
+    </Window.Resources>
+
+
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Menu DockPanel.Dock="Top" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2">
+            <MenuItem Header="Файл">
+                <MenuItem x:Name="OpenFileMenuItem" Header="Загрузить" Command="{Binding OpenDocumentCommand}"></MenuItem>
+                <MenuItem x:Name="SaveFileMenuItem" Header="Сохранить" Command="{Binding SaveDocumentCommand}"></MenuItem>
+                <MenuItem x:Name="SaveAsFileMenuItem" Header="Сохранить как..." Command="{Binding SaveAsDocumentCommand}"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Управление">
+                <MenuItem x:Name="AddStudentMenuItem" Header="Добавить студента" Command="{Binding ShowWindowAddingStudentCommand}"></MenuItem>
+                <MenuItem x:Name="EditStudentMenuItem" Header="Редактировать" Command="{Binding ShowWindowEditStudentCommand}"></MenuItem>
+                <MenuItem x:Name="DeleteMenuItem" Header="Удалить" Command="{Binding DeleteStudentCommand}" ></MenuItem>
+            </MenuItem>
+        </Menu>
+
+        <ToolBar Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1">
+            <Button ToolTip="Сохранить" Command="{Binding SaveDocumentCommand}">
+                <Image Source="/Resource/save.png" MaxHeight="24"></Image>
+            </Button>
+            <Button ToolTip="Добавить студента" Command="{Binding ShowWindowAddingStudentCommand}">
+                <Image Source="/Resource/add.png" MaxHeight="24"></Image>
+            </Button>
+            <Button ToolTip="Редактировать" Command="{Binding ShowWindowEditStudentCommand}">
+                <Image Source="/Resource/edit.png" MaxHeight="24"></Image>
+            </Button>
+            <Button ToolTip="Удалить" Command="{Binding DeleteStudentCommand}">
+                <Image Source="/Resource/delete.png" MaxHeight="24"></Image>
+            </Button>
+        </ToolBar>
+
+        <ListBox x:Name="StudentsListBox" SelectedItem="{Binding CurrentStudent, UpdateSourceTrigger=PropertyChanged}" 
+                 ItemsSource="{Binding Path=Students, Mode=TwoWay}" AlternationCount="2" Grid.Column="0" Grid.Row="2"
+                 ItemTemplate="{StaticResource MainDT}" SelectionMode="Extended" SelectedIndex="0">
+        </ListBox>
+
+        <TextBlock x:Name="NotElementTextBlock" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" 
+                   VerticalAlignment="Center" FontSize="20" Text="Список пуст">
+            <TextBlock.Style>
+                <Style TargetType="TextBlock">
+                    <Setter Property="Visibility" Value="Hidden" />
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding ItemsSource,ElementName=StudentsListBox}" Value="{x:Null}">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ItemsSource.Count,ElementName=StudentsListBox}" Value="0">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+            <!--<TextBlock.Triggers>
+                <EventTrigger RoutedEvent="ListBox.IsEnabled">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Visibility"
+                                           Storyboard.TargetName="LaunchButtons">
+                                <DiscreteObjectKeyFrame KeyTime="0:0:0"
+                                        Value="{x:Static Visibility.Visible}" />
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                --><!--<DataTrigger Binding="{Binding ItemsSource,ElementName=StudentsListBox}" Value="{x:Null}">
+                    <Setter Property="Visibility" Value="Visible" />
+                </DataTrigger>--><!--
+            </TextBlock.Triggers>-->
+        </TextBlock>
+
+        <Grid x:Name="StudentGrid" Grid.Column="1" Grid.Row="2">
+            <StackPanel Grid.Column="1" DataContext="{Binding ElementName=StudentsListBox}">
+                <TextBlock Text="Имя"/>
+                <TextBox x:Name="StudentNameTextBlock" Text="{Binding Path=SelectedItem.FirstName}" IsReadOnly="True"/>
+                <TextBlock Text="Фамилия"/>
+                <TextBox x:Name="StudentLastNameTextBlock" Text="{Binding Path=SelectedItem.LastName}" IsReadOnly="True"/>
+                <TextBlock Text="Возраст"/>
+                <TextBox x:Name="StudentAgeTextBlock" Text="{Binding Path=SelectedItem.Age, StringFormat=\{0\} лет}" IsReadOnly="True"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
